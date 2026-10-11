@@ -81,7 +81,7 @@ Pemeriksaan kutipan mengizinkan variasi huruf besar dan spasi, tetapi tidak meny
 
 Tes otomatis memeriksa kontrak API, kunci yang tidak tersedia, masukan kosong, hasil model dengan kutipan palsu, percobaan ulang, serta rencana tujuh hari. Uji manual mencakup tiga contoh yang disediakan, ukuran layar desktop dan ponsel, dan respons saat API tidak tersedia.
 
-MVP diterima bila frontend berhasil dibuild, tes backend lulus, analisis live dengan kunci milik pengguna berjalan, dan setiap item `supported` menampilkan kutipan profil yang dapat ditemukan kembali pada input. Pengujian live belum dapat diklaim sampai dijalankan dengan `GEMINI_API_KEY`.
+MVP diterima bila frontend berhasil dibuild, tes backend lulus, analisis live dengan kunci milik pengguna berjalan, dan setiap item `supported` menampilkan kutipan profil yang dapat ditemukan kembali pada input. Pada 11 Oktober 2026, uji integrasi lokal dengan contoh anonim berhasil (HTTP 200, dua persyaratan, dan rencana tujuh hari). Skenario live lain belum diuji.
 
 ## 8. Pengembangan hackathon
 
