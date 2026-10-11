@@ -24,11 +24,13 @@ cd frontend
 npm install
 ```
 
-Atur `GEMINI_API_KEY` sebagai environment variable di terminal yang akan menjalankan backend. Jangan memasukkan kunci ke source code, `.env` yang dikomit, atau frontend.
+Isi `GEMINI_API_KEY` di `backend/.env` (salin dari `backend/.env.example`). File `.env` diabaikan Git dan dibaca otomatis oleh backend saat server mulai. Jangan memasukkan kunci ke source code atau frontend.
 
-```powershell
-$env:GEMINI_API_KEY = "isi-kunci-anda"
+```env
+GEMINI_API_KEY=isi-kunci-anda
 ```
+
+Sebagai alternatif, atur `$env:GEMINI_API_KEY` di terminal sebelum menjalankan backend. Nilai dari terminal mendapat prioritas atas `backend/.env`. Restart server setelah mengubah file `.env`.
 
 Terminal 1, dari folder `skillbridge-ai/backend`:
 

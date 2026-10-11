@@ -3,11 +3,14 @@
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 
 from .analysis import AnalysisError, GeminiAnalyzer
 from .models import AnalyzeRequest, AnalyzeResponse
+
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 app = FastAPI(title="SkillBridge AI", version="0.1.0")
 
